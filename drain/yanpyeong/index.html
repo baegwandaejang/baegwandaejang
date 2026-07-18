@@ -101,7 +101,24 @@ footer{background:#1F1535;color:rgba(255,255,255,.5);padding:30px 20px;text-alig
 footer strong{color:#fff;}
 .mobile-call-bar{position:fixed;bottom:0;left:0;right:0;z-index:300;display:none;}
 .mobile-call-bar a{display:flex;align-items:center;justify-content:center;gap:12px;background:var(--p);color:#fff;text-decoration:none;padding:18px 20px;font-size:18px;font-weight:800;width:100%;}
-@media(max-width:768px){.hero-inner{grid-template-columns:1fr;}.hero h1{font-size:24px;}.two-col{grid-template-columns:1fr;}.mobile-call-bar{display:block;}}</style>
+@media(max-width:768px){.hero-inner{grid-template-columns:1fr;}.hero h1{font-size:24px;}.two-col{grid-template-columns:1fr;}.mobile-call-bar{display:block;}}
+.toc-box{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:14px 18px;margin-bottom:24px;}
+.toc-title{font-size:12px;font-weight:700;color:rgba(255,255,255,.7);margin-bottom:8px;letter-spacing:1px;}
+.toc-list{margin:0;padding-left:16px;}
+.toc-list li{font-size:12px;margin-bottom:5px;}
+.toc-list a{color:rgba(255,255,255,.85);text-decoration:none;}
+.rv-box{margin-bottom:32px;}
+.rv-item{background:#fff;border:1px solid #e0d8f0;border-radius:10px;padding:16px;margin-bottom:10px;}
+.rv-star{color:#FFD700;font-size:14px;margin-bottom:4px;}
+.rv-name{font-size:12px;font-weight:700;color:#4c1d95;margin-bottom:6px;}
+.rv-text{font-size:13px;color:#1a1a2e;line-height:1.7;}
+.hashtags{font-size:11px;color:#7c3aed;margin-bottom:28px;line-height:2;}
+.dong-table{width:100%;border-collapse:collapse;margin-bottom:28px;font-size:12px;}
+.dong-table th{background:#4c1d95;color:#fff;padding:7px 9px;text-align:left;}
+.dong-table td{padding:6px 9px;border-bottom:1px solid #e0d8f0;}
+.dong-table a{color:#4c1d95;text-decoration:none;}
+
+</style>
 <link rel="icon" href="/favicon.ico">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "배관대장 당일 출동 가능한가요?", "acceptedAnswer": {"@type": "Answer", "text": "네, 서울 서북부 당일 출동 가능해요."}}, {"@type": "Question", "name": "비용이 얼마예요?", "acceptedAnswer": {"@type": "Answer", "text": "현장 확인 후 정확한 비용을 안내드려요. 작업 전 반드시 견적 동의 후 시작해요."}}, {"@type": "Question", "name": "야간에도 출동하나요?", "acceptedAnswer": {"@type": "Answer", "text": "365일 24시간 연중무휴예요."}}]}</script>
 </head>
@@ -120,13 +137,11 @@ footer strong{color:#fff;}
   </div>
   <div class="hero-right">
     <h3>평균 도착 시간</h3>
-    <div class="arrival-time">28<span>분</span></div>
+    <div class="arrival-time">30<span>분</span></div>
     <div class="arrival-note">양평동 기준</div>
     <hr class="divider">
-    <div class="hf"><div class="hf-dot"></div>작업 전 반드시 비용 안내</div>
-    <div class="hf"><div class="hf-dot"></div>동의 후에만 작업 시작</div>
-    <div class="hf"><div class="hf-dot"></div>전화 상담 무료</div>
-    <div class="hf"><div class="hf-dot"></div>365일 24시간 접수</div>
+    <div class="hf"><div class="hf-dot"></div>작업 전 반드시 비용 안내</div><div class="hf"><div class="hf-dot"></div>방문 출장비 없음</div><div class="hf"><div class="hf-dot"></div>A/S 책임 1년</div><div class="hf"><div class="hf-dot"></div>정확한 진단 후 작업</div>
+  365일 24시간 접수</div>
   </div>
 </div></div>
 <div class="tab-nav"><div class="tab-nav-inner"><a class="tab-btn active" href="/drain/yanpyeong/">하수구막힘</a><a class="tab-btn " href="/toilet/yanpyeong/">변기막힘</a><a class="tab-btn " href="/sink/yanpyeong/">싱크대막힘</a><a class="tab-btn " href="/leak/yanpyeong/">누수탐지·수리</a></div></div>
@@ -150,7 +165,6 @@ footer strong{color:#fff;}
 <div class="sl">NEARBY</div>
   <div class="nearby-box"><h3>인근 지역 출장</h3><div class="nc"><a class="nk" href="/drain/dangsan/">당산동 배수구 뚫기</a><a class="nk" href="/drain/yeongdeungpo/">영등포동 배수구 뚫기</a><a class="nk" href="/drain/dorim/">도림동 배수구 뚫기</a></div></div>
 
-  <!-- 유사도 저감 — 하단 배치 -->
   <div class="sl">ABOUT</div>
   <h2 class="st">양평동 하수구막힘 안내</h2>
   <div class="about-box">
@@ -174,7 +188,8 @@ footer strong{color:#fff;}
   <p>365일 24시간 · 평균 28분 도착 · 작업 전 비용 안내 · 동의 후 작업</p>
   <a class="ctel" href="tel:07089899085">📞 070-8989-9085</a>
 </div>
-<footer><strong>배관대장</strong><br>서울특별시 강서구 <br>하수구·변기·싱크대막힘, 누수탐지<br>대표전화: 070-8989-9085 · 365일 24시간<br>© 배관대장. All rights reserved.</footer>
+<div class="hashtags">#하수구막힘 #하수구뚫기 #고압세척 #배수구막힘 #긴급출동 #무료출장 #배관대장</div>
+<footer><strong>배관대장</strong><br>사업자번호: 564-20-02363<br>서울특별시 강서구 공항대로 269-15<br>하수구·변기·싱크대막힘, 누수탐지, 수전·변기·세면대 교체<br>대표전화: 070-8989-9085 · 365일 24시간<br>© 배관대장. All rights reserved.</footer>
 <div class="mobile-call-bar"><a href="tel:07089899085"><span>📞 전화 걸기</span><span><strong>070-8989-9085</strong></span></a></div>
 </body>
 </html>
