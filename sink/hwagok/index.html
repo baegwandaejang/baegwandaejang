@@ -158,6 +158,60 @@ footer strong{color:#fff;}
 .dong-table td{padding:6px 9px;border-bottom:1px solid #e0d8f0;}
 .dong-table a{color:#4c1d95;text-decoration:none;}
 
+
+/* ===== 썸네일 그리드 (동일 크기) ===== */
+.thumb-strip {
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:8px;
+  margin-bottom:32px;
+}
+.thumb-strip img {
+  width:100%; aspect-ratio:1/1; object-fit:cover;
+  border-radius:8px; display:block;
+}
+.equip-strip {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:8px;
+  margin-bottom:32px;
+}
+.equip-strip img {
+  width:100%; aspect-ratio:1/1; object-fit:cover;
+  border-radius:8px; display:block;
+}
+@media(max-width:480px){
+  .thumb-strip { grid-template-columns:repeat(3,1fr); }
+  .equip-strip { grid-template-columns:repeat(2,1fr); }
+}
+
+/* ===== 예방 가이드 ===== */
+.guide-box {
+  background:#fff; border:1px solid var(--b,#dde3ed);
+  border-radius:10px; padding:20px 22px; margin-bottom:32px;
+}
+.guide-title { font-size:15px; font-weight:700; color:var(--p,#1a4a8a); margin-bottom:14px; }
+.guide-item { display:flex; gap:12px; padding:10px 0; border-bottom:1px solid var(--b,#dde3ed); align-items:flex-start; }
+.guide-item:last-child { border-bottom:none; }
+.guide-num {
+  width:26px; height:26px; min-width:26px;
+  background:var(--p,#1a4a8a); color:#fff;
+  border-radius:50%; font-size:13px; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+  flex-shrink:0; margin-top:1px;
+}
+.guide-text strong { display:block; font-size:14px; font-weight:700; color:var(--t,#1e2430); margin-bottom:3px; }
+.guide-text span { font-size:13px; color:var(--m,#5a6478); line-height:1.7; }
+
+/* ===== 실제 작업 사례 ===== */
+.work-case-box {
+  background:#fff; border:1px solid var(--b,#dde3ed);
+  border-left:4px solid var(--p,#1a4a8a);
+  border-radius:0 10px 10px 0; padding:18px 20px; margin-bottom:32px;
+}
+.work-case-title { font-size:14px; font-weight:700; color:var(--p,#1a4a8a); margin-bottom:8px; }
+.work-case-text { font-size:14px; color:var(--t,#1e2430); line-height:1.8; }
+
 </style>
 <link rel="icon" href="/favicon.ico">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://baegwandaejang.co.kr/"}, {"@type": "ListItem", "position": 2, "name": "싱크대 뚫음", "item": "https://baegwandaejang.co.kr/sink/"}, {"@type": "ListItem", "position": 3, "name": "화곡동 싱크대막힘", "item": "https://baegwandaejang.co.kr/sink/hwagok/"}]}</script>
@@ -193,11 +247,13 @@ footer strong{color:#fff;}
   <div class="diag-box"><div class="di"><div class="dd red"></div><div class="dt">기름 냄새와 함께 역류 발생</div></div><div class="di"><div class="dd red"></div><div class="dt">여러 번 뚫어도 며칠 후 재발</div></div><div class="di"><div class="dd red"></div><div class="dt">배수구에서 벌레가 보임</div></div><div class="di"><div class="dd green"></div><div class="dt">배수 정상</div></div><div class="di"><div class="dd green"></div><div class="dt">냄새 없음</div></div></div>
   <div class="sl">TIME</div><h2 class="st">작업 소요 시간</h2><div class="time-box"><div class="tr2"><span class="tl">단순 막힘</span><span class="tv">20~40분</span></div><div class="tr2"><span class="tl">기름때 고압세척</span><span class="tv">1~1시간 30분</span></div><div class="tr2"><span class="tl">트랩 교체</span><span class="tv">30분~1시간</span></div><div class="tr2"><span class="tl">배관 전체 세척</span><span class="tv">1시간 30분~2시간</span></div></div>
 <div class="sl">CAUTION</div><h2 class="st">이것만은 하지 마세요!</h2><div class="mistake-box"><div class="mi"><span class="mx">✕</span><span class="mt"><strong>기름을 싱크대에 직접 버리기</strong> — 기름때 고착의 70%가 이 원인이에요</span></div><div class="mi"><span class="mx">✕</span><span class="mt"><strong>음식물 찌꺼기 그대로 버리기</strong> — 트랩 아래 쌓여 기름과 결합해요</span></div><div class="mi"><span class="mx">✕</span><span class="mt"><strong>세제로 해결하려 하기</strong> — 임시방편이고 재발이 반복돼요</span></div><div class="mi"><span class="mx">✕</span><span class="mt"><strong>방치하기</strong> — 역류 시 아래층에 피해를 줄 수 있어요</span></div></div>
-<div class="sl">WORK PHOTOS</div><h2 class="st">서울특별시 싱크대막힘 실제 작업 사진</h2><div class="gallery-grid"><div><img src="/images/sink/baegwan-sink-work-06.jpg" alt="서울특별시 싱크대막힘 실제 작업 사진 1" loading="lazy" width="400" height="300" style="width:100%;height:200px;object-fit:cover;border-radius:8px;"></div><div><img src="/images/sink/baegwan-sink-work-12.jpg" alt="서울특별시 싱크대막힘 실제 작업 사진 2" loading="lazy" width="400" height="300" style="width:100%;height:200px;object-fit:cover;border-radius:8px;"></div><div><img src="/images/sink/baegwan-sink-work-01.jpg" alt="서울특별시 싱크대막힘 실제 작업 사진 3" loading="lazy" width="400" height="300" style="width:100%;height:200px;object-fit:cover;border-radius:8px;"></div><div><img src="/images/sink/baegwan-sink-work-07.jpg" alt="서울특별시 싱크대막힘 실제 작업 사진 4" loading="lazy" width="400" height="300" style="width:100%;height:200px;object-fit:cover;border-radius:8px;"></div><div><img src="/images/sink/baegwan-sink-work-09.jpg" alt="서울특별시 싱크대막힘 실제 작업 사진 5" loading="lazy" width="400" height="300" style="width:100%;height:200px;object-fit:cover;border-radius:8px;"></div></div>
+<div class="sl">WORK PHOTOS</div><h2 class="st">화곡동 싱크대막힘 실제 작업 사진</h2><div class="thumb-strip"><img src="/images/sink/baegwan-sink-work-01.jpg" alt="화곡동 싱크대막힘 작업사진 1" loading="lazy"><img src="/images/sink/baegwan-sink-work-02.jpg" alt="화곡동 싱크대막힘 작업사진 2" loading="lazy"><img src="/images/sink/baegwan-sink-work-03.jpg" alt="화곡동 싱크대막힘 작업사진 3" loading="lazy"><img src="/images/sink/baegwan-sink-work-04.jpg" alt="화곡동 싱크대막힘 작업사진 4" loading="lazy"><img src="/images/sink/baegwan-sink-work-05.jpg" alt="화곡동 싱크대막힘 작업사진 5" loading="lazy"></div>
+<div class="sl">CASE</div><h2 class="st">화곡동 실제 작업 사례</h2><div class="work-case-box"><div class="work-case-title">📋 화곡동 아파트 하수구막힘</div><div class="work-case-text">화곡동 아파트 공동 배관 역류. 맨홀 접근 후 횡주관 세척 완료.</div></div>
+<div class="sl">GUIDE</div><h2 class="st">화곡동 싱크대막힘 — 싱크대막힘 예방 완전 가이드</h2><div class="guide-box"><div class="guide-item"><div class="guide-num">1</div><div class="guide-text"><strong>기름은 배관에 절대 버리지 않기</strong><span>동물성 기름은 상온에서 굳습니다. 조리 후 기름은 식혀서 밀봉 후 쓰레기통에 버려야 배관 수명이 늘어납니다.</span></div></div><div class="guide-item"><div class="guide-num">2</div><div class="guide-text"><strong>음식물 찌꺼기 거름망 필수</strong><span>싱크대 배수구에 거름망을 설치하면 음식물이 배관으로 유입되지 않습니다. 매일 비워주면 냄새도 예방됩니다.</span></div></div><div class="guide-item"><div class="guide-num">3</div><div class="guide-text"><strong>식당·카페는 그리스 트랩 설치</strong><span>영업장은 법적으로 그리스 트랩 설치 의무가 있습니다. 정기 청소로 기름 슬러지 배관 유입을 차단합니다.</span></div></div><div class="guide-item"><div class="guide-num">4</div><div class="guide-text"><strong>뜨거운 물로 주 1회 세척</strong><span>싱크대에 끓인 물을 천천히 부으면 기름 슬러지를 녹입니다. 베이킹소다와 식초를 활용하면 냄새 제거 효과도 있습니다.</span></div></div></div>
 <div class="sl">FAQ</div><h2 class="st">서울특별시 싱크대막힘 자주 묻는 질문</h2><div class="faq-item"><div class="fq">Q. 싱크대막힘 당일 처리 가능한가요?</div><div class="fa">A. 네, 당일 출동·당일 처리 가능해요.</div></div><div class="faq-item"><div class="fq">Q. 씽크대막힘 비용이 얼마예요?</div><div class="fa">A. 현장 확인 후 안내드려요.</div></div><div class="faq-item"><div class="fq">Q. 역류가 생겼어요.</div><div class="fa">A. 즉시 물 사용을 줄이고 연락 주세요.</div></div><div class="faq-item"><div class="fq">Q. 냄새가 나요.</div><div class="fa">A. 세척으로 냄새까지 해결돼요.</div></div>
 <div class="sl">PRICE</div><h2 class="st">서울특별시 싱크대막힘 비용 안내</h2><div class="cost-wrap"><div class="cr"><span class="cl">출장비</span><span class="cp">무료 방문</span></div><div class="cr"><span class="cl">작업 비용</span><span class="cp">현장 확인 후 안내</span></div><div class="cr"><span class="cl">야간·공휴일</span><span class="cp">별도 할증 없음</span></div><div class="cr"><span class="cl">과견적</span><span class="cp">절대 없음</span></div></div><p class="cn">※ 현장에서 상태를 직접 보고 솔직하게 말씀드려요. 작업 전 반드시 비용 안내 후 동의를 받고 시작해요.</p>
 <div class="sl">PROCESS</div><h2 class="st">서울특별시 출장 진행 순서</h2><div class="process-wrap"><div class="pstep"><div class="psn">1</div><strong>전화 접수</strong><p>증상·위치 확인</p></div><div class="pstep"><div class="psn">2</div><strong>출동 준비</strong><p>장비 파악</p></div><div class="pstep"><div class="psn">3</div><strong>현장 도착</strong><p>트랩 점검</p></div><div class="pstep"><div class="psn">4</div><strong>원인 파악</strong><p>처리 방법 결정</p></div><div class="pstep"><div class="psn">5</div><strong>비용 안내</strong><p>견적 동의</p></div><div class="pstep"><div class="psn">6</div><strong>작업 시작</strong><p>세척·교체</p></div><div class="pstep"><div class="psn">7</div><strong>배수 테스트</strong><p>정상 확인</p></div><div class="pstep"><div class="psn">8</div><strong>예방 안내</strong><p>재발 방지</p></div></div>
-<div class="sl">EQUIPMENT</div><h2 class="st">전문 장비 보유</h2><div class="equip-photos"><div class="eq-card"><img src="/images/equipment/baegwan-equipment-01.jpg" alt="전문 장비 1" loading="lazy" width="300" height="180" style="width:100%;height:150px;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 1</div></div><div class="eq-card"><img src="/images/equipment/baegwan-equipment-02.jpg" alt="전문 장비 2" loading="lazy" width="300" height="180" style="width:100%;height:150px;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 2</div></div><div class="eq-card"><img src="/images/equipment/baegwan-equipment-03.jpg" alt="전문 장비 3" loading="lazy" width="300" height="180" style="width:100%;height:150px;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 3</div></div></div>
+<div class="sl">EQUIPMENT</div><h2 class="st">배관대장 전문 장비</h2><div class="equip-strip"><img src="/images/equipment/baegwan-equipment-01.jpg" alt="고압세척기" loading="lazy"><img src="/images/equipment/baegwan-equipment-02.jpg" alt="배관 내시경" loading="lazy"><img src="/images/equipment/baegwan-equipment-03.jpg" alt="플렉스 샤프트" loading="lazy"><img src="/images/equipment/baegwan-equipment-04.jpg" alt="이물질 회수장비" loading="lazy"></div>
 <div class="sl">CASES</div><h2 class="st">서울특별시 단계별 가이드</h2><div class="about-box"><p class="ab-body" style="white-space:pre-line">서울특별시 싱크대막힘 발생 시 단계별 대처법
 
 STEP 1. 즉시 할 것

@@ -158,6 +158,60 @@ footer strong{color:#fff;}
 .dong-table td{padding:6px 9px;border-bottom:1px solid #e0d8f0;}
 .dong-table a{color:#4c1d95;text-decoration:none;}
 
+
+/* ===== 썸네일 그리드 (동일 크기) ===== */
+.thumb-strip {
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:8px;
+  margin-bottom:32px;
+}
+.thumb-strip img {
+  width:100%; aspect-ratio:1/1; object-fit:cover;
+  border-radius:8px; display:block;
+}
+.equip-strip {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:8px;
+  margin-bottom:32px;
+}
+.equip-strip img {
+  width:100%; aspect-ratio:1/1; object-fit:cover;
+  border-radius:8px; display:block;
+}
+@media(max-width:480px){
+  .thumb-strip { grid-template-columns:repeat(3,1fr); }
+  .equip-strip { grid-template-columns:repeat(2,1fr); }
+}
+
+/* ===== 예방 가이드 ===== */
+.guide-box {
+  background:#fff; border:1px solid var(--b,#dde3ed);
+  border-radius:10px; padding:20px 22px; margin-bottom:32px;
+}
+.guide-title { font-size:15px; font-weight:700; color:var(--p,#1a4a8a); margin-bottom:14px; }
+.guide-item { display:flex; gap:12px; padding:10px 0; border-bottom:1px solid var(--b,#dde3ed); align-items:flex-start; }
+.guide-item:last-child { border-bottom:none; }
+.guide-num {
+  width:26px; height:26px; min-width:26px;
+  background:var(--p,#1a4a8a); color:#fff;
+  border-radius:50%; font-size:13px; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+  flex-shrink:0; margin-top:1px;
+}
+.guide-text strong { display:block; font-size:14px; font-weight:700; color:var(--t,#1e2430); margin-bottom:3px; }
+.guide-text span { font-size:13px; color:var(--m,#5a6478); line-height:1.7; }
+
+/* ===== 실제 작업 사례 ===== */
+.work-case-box {
+  background:#fff; border:1px solid var(--b,#dde3ed);
+  border-left:4px solid var(--p,#1a4a8a);
+  border-radius:0 10px 10px 0; padding:18px 20px; margin-bottom:32px;
+}
+.work-case-title { font-size:14px; font-weight:700; color:var(--p,#1a4a8a); margin-bottom:8px; }
+.work-case-text { font-size:14px; color:var(--t,#1e2430); line-height:1.8; }
+
 </style>
 <link rel="icon" href="/favicon.ico">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://baegwandaejang.co.kr/"}, {"@type": "ListItem", "position": 2, "name": "배관교체", "item": "https://baegwandaejang.co.kr/replace/"}, {"@type": "ListItem", "position": 3, "name": "녹번동 배관교체", "item": "https://baegwandaejang.co.kr/replace/nokbeon/"}]}</script>
@@ -204,9 +258,11 @@ footer strong{color:#fff;}
 ✅ 배관 연식이 20년 이상이다
 
 2개 이상 해당된다면 배관 점검을 받으세요. 서울특별시에서 현장 확인 후 교체 여부를 안내해요.</p></div>
-<div class="sl">EQUIPMENT</div><h2 class="st">전문 장비 보유</h2><div class="equip-photos"><div class="eq-card"><img src="/images/equipment/baegwan-equipment-02.jpg" alt="전문 장비 1" loading="lazy" width="300" height="180" style="width:100%;height:150px;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 1</div></div><div class="eq-card"><img src="/images/equipment/baegwan-equipment-03.jpg" alt="전문 장비 2" loading="lazy" width="300" height="180" style="width:100%;height:150px;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 2</div></div><div class="eq-card"><img src="/images/equipment/baegwan-equipment-04.jpg" alt="전문 장비 3" loading="lazy" width="300" height="180" style="width:100%;height:150px;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 3</div></div></div>
+<div class="sl">EQUIPMENT</div><h2 class="st">배관대장 전문 장비</h2><div class="equip-strip"><img src="/images/equipment/baegwan-equipment-01.jpg" alt="고압세척기" loading="lazy"><img src="/images/equipment/baegwan-equipment-02.jpg" alt="배관 내시경" loading="lazy"><img src="/images/equipment/baegwan-equipment-03.jpg" alt="플렉스 샤프트" loading="lazy"><img src="/images/equipment/baegwan-equipment-04.jpg" alt="이물질 회수장비" loading="lazy"></div>
+<div class="sl">CASE</div><h2 class="st">녹번동 실제 작업 사례</h2><div class="work-case-box"><div class="work-case-title">📋 녹번동 빌라 하수구막힘</div><div class="work-case-text">녹번동 빌라 구축 배관 스케일 제거. 안전 수압으로 세척 완료.</div></div>
+<div class="sl">GUIDE</div><h2 class="st">녹번동 교체서비스 — 수전·변기 교체 타이밍 가이드</h2><div class="guide-box"><div class="guide-item"><div class="guide-num">1</div><div class="guide-text"><strong>수전 교체 시기</strong><span>수전 패킹 교체 후에도 물이 새거나 온도 조절이 안 되면 교체 타이밍입니다. 10년 이상 된 수전은 카트리지 전체 교체보다 신규 교체가 경제적입니다.</span></div></div><div class="guide-item"><div class="guide-num">2</div><div class="guide-text"><strong>변기 교체 시기</strong><span>물 내림이 약하거나 물이 계속 흐르는 증상은 사이폰 트랩 손상 신호입니다. 1세대 이전 변기는 절수형으로 교체하면 수도 요금을 30% 이상 절감합니다.</span></div></div><div class="guide-item"><div class="guide-num">3</div><div class="guide-text"><strong>세면대 교체 시기</strong><span>균열이나 변색이 심하거나 배수구 주변 부식이 진행됐다면 교체를 권장합니다. 교체 시 배관 연결부도 함께 점검합니다.</span></div></div><div class="guide-item"><div class="guide-num">4</div><div class="guide-text"><strong>교체 전 현장 확인 필수</strong><span>제품 구매 전 반드시 현장 배관 규격을 확인하세요. 규격이 맞지 않으면 추가 공사가 필요해 비용이 증가합니다.</span></div></div></div>
 <div class="sl">FAQ</div><h2 class="st">서울특별시 배관교체 자주 묻는 질문</h2><div class="faq-item"><div class="fq">Q. 배관교체 비용이 얼마예요?</div><div class="fa">A. 현장 확인 후 안내드려요.</div></div><div class="faq-item"><div class="fq">Q. 리모델링 중 교체 가능한가요?</div><div class="fa">A. 네, 동시 진행으로 비용 절감 가능해요.</div></div><div class="faq-item"><div class="fq">Q. 전면 교체 기간은?</div><div class="fa">A. 2~5일 소요돼요.</div></div><div class="faq-item"><div class="fq">Q. 교체 후 AS는?</div><div class="fa">A. 이상 시 연락 주세요.</div></div>
-<div class="sl">WORK PHOTOS</div><h2 class="st">서울특별시 배관교체 실제 작업 사진</h2><div class="gallery-grid"><div><img src="/images/replace/baegwan-replace-work-02.jpg" alt="서울특별시 배관교체 실제 작업 사진 1" loading="lazy" width="400" height="300" style="width:100%;height:200px;object-fit:cover;border-radius:8px;"></div><div><img src="/images/replace/baegwan-replace-work-07.jpg" alt="서울특별시 배관교체 실제 작업 사진 2" loading="lazy" width="400" height="300" style="width:100%;height:200px;object-fit:cover;border-radius:8px;"></div><div><img src="/images/replace/baegwan-replace-work-03.jpg" alt="서울특별시 배관교체 실제 작업 사진 3" loading="lazy" width="400" height="300" style="width:100%;height:200px;object-fit:cover;border-radius:8px;"></div><div><img src="/images/replace/baegwan-replace-work-04.jpg" alt="서울특별시 배관교체 실제 작업 사진 4" loading="lazy" width="400" height="300" style="width:100%;height:200px;object-fit:cover;border-radius:8px;"></div></div>
+<div class="sl">WORK PHOTOS</div><h2 class="st">녹번동 교체서비스 실제 작업 사진</h2><div class="thumb-strip"><img src="/images/replace/baegwan-replace-work-01.jpg" alt="녹번동 교체서비스 작업사진 1" loading="lazy"><img src="/images/replace/baegwan-replace-work-02.jpg" alt="녹번동 교체서비스 작업사진 2" loading="lazy"><img src="/images/replace/baegwan-replace-work-03.jpg" alt="녹번동 교체서비스 작업사진 3" loading="lazy"><img src="/images/replace/baegwan-replace-work-04.jpg" alt="녹번동 교체서비스 작업사진 4" loading="lazy"><img src="/images/replace/baegwan-replace-work-05.jpg" alt="녹번동 교체서비스 작업사진 5" loading="lazy"></div>
 <div class="sl">NEARBY</div>
   <div class="nearby-box"><h3>인근 지역 교체</h3><div class="nc"><a class="nk" href="/replace/bulgwang/">불광동 교체</a><a class="nk" href="/replace/galhyeon/">갈현동 교체</a></div></div>
 </div>
